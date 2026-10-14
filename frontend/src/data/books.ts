@@ -1,0 +1,163 @@
+export interface Book {
+  id: number;
+  title: string;
+  author: string;
+  description: string;
+  price: number;
+  cover: string;
+  category: string;
+  pages: number;
+  publisher: string;
+  year: number;
+  rating: number;
+  reviews: number;
+  stock: number;
+  isDigital: boolean;
+  isFeatured?: boolean;
+  isPopular?: boolean;
+  isNew?: boolean;
+}
+
+// Sample data for testing
+export const sampleBooks: Book[] = [
+  {
+    id: 1,
+    title: "Noli Me Tangere",
+    author: "Jose Rizal",
+    description: '"Noli Me Tangere" is a novel that exposed the social ills and colonial oppression of the Philippines during Spanish rule. It follows Crisostomo Ibarra as he returns home after seven years of study in Europe.',
+    price: 250,
+    cover: "📕",
+    category: "Fiction",
+    pages: 320,
+    publisher: "Anvil Press",
+    year: 1887,
+    rating: 4.8,
+    reviews: 1234,
+    stock: 999,
+    isDigital: true,
+    isFeatured: true,
+    isPopular: true,
+  },
+  {
+    id: 2,
+    title: "El Filibusterismo",
+    author: "Jose Rizal",
+    description: 'The sequel to Noli Me Tangere, this novel continues the story of Crisostomo Ibarra, now disguised as the wealthy jeweler Simoun, plotting revolution against the Spanish colonial government.',
+    price: 250,
+    cover: "📗",
+    category: "Fiction",
+    pages: 380,
+    publisher: "Anvil Press",
+    year: 1891,
+    rating: 4.7,
+    reviews: 987,
+    stock: 999,
+    isDigital: true,
+    isFeatured: true,
+    isPopular: true,
+  },
+  {
+    id: 3,
+    title: "The Woman Who Had Two Navels",
+    author: "Nick Joaquin",
+    description: 'A masterpiece of Philippine literature that explores themes of identity, colonialism, and the Filipino psyche through the story of a woman searching for her true self.',
+    price: 350,
+    cover: "📘",
+    category: "Literary Fiction",
+    pages: 256,
+    publisher: "Vera-Reyes",
+    year: 1961,
+    rating: 4.5,
+    reviews: 654,
+    stock: 999,
+    isDigital: true,
+    isFeatured: true,
+    isNew: true,
+  },
+  {
+    id: 4,
+    title: "Smaller and Smaller Circles",
+    author: "F.H. Batacan",
+    description: 'A gripping crime novel following two Jesuit priests as they investigate a series of murders in the slums of Manila, uncovering dark secrets along the way.',
+    price: 299,
+    cover: "📙",
+    category: "Crime Fiction",
+    pages: 288,
+    publisher: "UP Press",
+    year: 2002,
+    rating: 4.6,
+    reviews: 789,
+    stock: 999,
+    isDigital: true,
+    isFeatured: true,
+    isPopular: true,
+  },
+  {
+    id: 5,
+    title: "Po-on",
+    author: "F. Sionil Jose",
+    description: 'The first novel in the Rosales Saga, tracing the journey of a family from Ilocos during the Philippine-American War as they seek a new life in the town of Rosales.',
+    price: 320,
+    cover: "📕",
+    category: "Historical Fiction",
+    pages: 352,
+    publisher: "Solidaridad",
+    year: 1984,
+    rating: 4.4,
+    reviews: 543,
+    stock: 999,
+    isDigital: true,
+    isPopular: true,
+  },
+  {
+    id: 6,
+    title: "Dekada '70",
+    author: "Lualhati Bautista",
+    description: 'A powerful novel set during the Marcos era, following a middle-class family as they navigate the turbulent political landscape of the 1970s in the Philippines.',
+    price: 280,
+    cover: "📘",
+    category: "Political Fiction",
+    pages: 320,
+    publisher: "Anvil Press",
+    year: 1983,
+    rating: 4.5,
+    reviews: 876,
+    stock: 999,
+    isDigital: true,
+    isPopular: true,
+  },
+  {
+    id: 7,
+    title: "Gapô",
+    author: "Lualhati Bautista",
+    description: 'A powerful novel set in Olongapo City during the American colonial period, exploring themes of identity, love, and the Filipino-American relationship.',
+    price: 280,
+    cover: "📙",
+    category: "Historical Fiction",
+    pages: 240,
+    publisher: "Anvil Press",
+    year: 1988,
+    rating: 4.3,
+    reviews: 432,
+    stock: 999,
+    isDigital: true,
+    isNew: true,
+  },
+  {
+    id: 8,
+    title: "America Is in the Heart",
+    author: "Carlos Bulosan",
+    description: 'A classic Filipino American autobiography that tells the story of a young man\'s journey from the Philippines to America, capturing the struggles of immigrant life.',
+    price: 380,
+    cover: "📗",
+    category: "Autobiography",
+    pages: 368,
+    publisher: "UW Press",
+    year: 1946,
+    rating: 4.3,
+    reviews: 432,
+    stock: 999,
+    isDigital: true,
+    isNew: true,
+  },
+];
